@@ -16,7 +16,6 @@ const Character = () => {
     fetchData()   
   }, [])
   const fetchButtonClicked = () =>{
-    debugger
     async function fetchSingleData(){
       const result = await axios(
         `https://swapi.dev/api/people/?search=${inputRef.current.value}`,
